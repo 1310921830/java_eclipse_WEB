@@ -48,7 +48,7 @@
  <script type="text/javascript">
  	$(function() {
 		$("#btn1").click(function() {
-			$("#a1").html("离线");
+			$("#a1").html("离线了a");
 			$("#a2").html("");
 			$("#uid").parent().html("");
 			$(this).parent().html('<input type="button" value="登录" id="btn3">');
