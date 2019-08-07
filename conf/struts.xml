@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<include file="struts-default.xml" />
+	<constant name="struts.action.extension" value="action" />
+	<package name="cccc" extends="struts-default" namespace="/who">
+		<action name="upload" class="com.yuantu.web.UploadAction"
+			method="uploadFile">
+			<result name="success">/upload.jsp</result>
+			<result name="input" >/upload.jsp</result>
+		</action>
+		<action name="downloadFile"
+			class="com.yuantu.web.UploadAction" method="downloadFile">
+		</action>
+	</package>
+
+</struts>
